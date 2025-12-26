@@ -244,6 +244,179 @@
 
     <section class="projects" id="projects">
         <h2 class="heading">MY PROJECTS</h2>
-        
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="img5.png" alt="Project 1">
+                <div class="portfolio-content">
+                    <h3>Created a Netflix Clone</h3>
+                    <p>I have developed a NETFLIX CLONE in the 24hrs
+                        hackathon which is conducted in our college By using the
+                        HTML & CSS and also I have added some features on my
+                        own way and added some new features based on my requirement.</p>
+                    <a href="https://github.com/SRAVANKUMAROFFICIAL/Netflix-clone" class="btn-project">View Project <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img2.png" alt="Project 2">
+                <div class="portfolio-content">
+                    <h3>Privacy-Preserving and Truthful Detection in Wireless Networks</h3>
+                    <p>In my final year me and my team done a project on how the data
+                        is transferring from source to destination and what if an attacker
+                        attacks and steals our data.</p>
+                    <a href="https://github.com/SRAVANKUMAROFFICIAL/final-yr-project" class="btn-project">View Project <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img3.png" alt="Project 3">
+                <div class="portfolio-content">
+                    <h3>Sign-language recommended system</h3>
+                    <p>I have developed a project that which can predict the output
+                        based upon what the gesture that which we are showing .Based
+                        on our sign gestures it will give the output as per that which we
+                        have trained..</p>
+                    <a href="https://github.com/SRAVANKUMAROFFICIAL/sign_language_recognition-3-git-" class="btn-project">View Project <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img4.png" alt="Project 4">
+                <div class="portfolio-content">
+                    <h3>Library management system</h3>
+                    <p>Self Developed project :I have developeed a real-time Library Navigation System using Java, JDBC, and MySQL, enabling quick book lookup, section-wise navigation, borrowing control, and live availability—all powered by an optimized, secure backend..</p>
+                    <a href="https://github.com/SRAVANKUMAROFFICIAL/Library-management-system" class="btn-project">View Project <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            </div>
+    </section>
+
+<section id="contact" class="contact">
+  <h2 class="heading">CONTACT</h2>
+
+  <div class="contact-container">
+
+    <div class="contact-form-box">
+      <h3>Get In Touch</h3>
+
+      <form id="contactForm" autocomplete="on" novalidate>
+        <div class="input-row">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your Name" required>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Enter your message..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button id="sendBtn" class="btn">Send via WhatsApp</button>
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-info-box">
+      <h3>Contact Information</h3>
+
+      <p><i class='bx bxs-map'></i> Andhra Pradesh, India</p>
+      <p><i class='bx bxs-phone-call'></i> +91 9177235791</p>
+      <p><i class='bx bxs-envelope'></i> sravankumar129129@gmail.com</p>
+
+      <div class="map-wrapper">
+        <div class="map-container">
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.95915065045!2d80.05141287487251!3d16.24339203475236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a81002f37a6cf%3A0xc3566d7726916e8c!2sSHREAM1A%20HOME!5e1!3m2!1sen!2sin!4v1763390856010!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <button class="map-maximize-btn" id="mapMaxBtn" aria-label="Open map fullscreen">🗖</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="mapOverlay" class="map-overlay" aria-hidden="true">
+    <button id="closeMapBtn" class="close-map-btn" aria-label="Close map">✕</button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.95915065045!2d80.05141287487251!3d16.24339203475236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a81002f37a6cf%3A0xc3566d7726916e8c!2sSHREAM1A%20HOME!5e1!3m2!1sen!2sin!4v1763390856010!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+
+
+<script>
+
+(function(){
+  const sendBtn = document.getElementById('sendBtn');
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  const mapOverlay = document.getElementById('mapOverlay');
+  const mapMaxBtn = document.getElementById('mapMaxBtn');
+  const closeMapBtn = document.getElementById('closeMapBtn');
+
+
+  const WHATSAPP_NUMBER = '919177235791';
+
+
+  sendBtn.addEventListener('click', function(e){
+    e.preventDefault();
+
+    const name = (document.getElementById('name').value || '').trim();
+    const email = (document.getElementById('email').value || '').trim();
+    const message = (document.getElementById('message').value || '').trim();
+
+    if(!name || !email || !message){
+      status.textContent = 'Please fill all fields.';
+      status.style.color = 'tomato';
+      setTimeout(()=> status.textContent = '', 3000);
+      return;
+    }
+
+    const text = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
+
+  
+    status.style.color = 'var(--main-color)';
+    status.textContent = 'Opening WhatsApp...';
+    setTimeout(()=> {
+      status.textContent = '';
+      form.reset();
+    }, 2000);
+  });
+
+  mapMaxBtn.addEventListener('click', function(){
+    mapOverlay.setAttribute('aria-hidden', 'false');
+  });
+  closeMapBtn.addEventListener('click', function(){
+    mapOverlay.setAttribute('aria-hidden', 'true');
+ 
+    closeMapBtn.blur();
+  });
+
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && mapOverlay.getAttribute('aria-hidden') === 'false'){
+      mapOverlay.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+  mapOverlay.addEventListener('click', function(e){
+    if(e.target === mapOverlay) mapOverlay.setAttribute('aria-hidden', 'true');
+  });
+
+})();
+</script>
+
+
 </body>
 </html>
